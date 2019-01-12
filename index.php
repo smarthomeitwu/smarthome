@@ -55,13 +55,15 @@
       <H3>Humidity and Temperature</H3>
        <div class="row">
             <div class="col-sm-6">
-              <center><h4><span id="c_hum">0.00</span><h4></center>
+              <center><h4><span id="c_hum">0.00</span><h4>
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
-            </div>
+           </center>
+                </div>
             <div class="col-sm-6">
-               <center><h4><span id="c_hum">0.00</span><h4></center>
+               <center><h4><span id="c_hum">0.00</span><h4> 
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
-            </div>
+            </center>
+                 </div>
             
 
       </div>
