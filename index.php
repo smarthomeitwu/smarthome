@@ -47,7 +47,7 @@
         <li class="active"><a href="#">Dashboard</a></li>
       
       </ul><br>
-                     <center><h4><span id="c_time">0.00</span><h4> 
+                     <center><p><span id="c_time"></span><p> 
     </div>
 
     <div class="col-sm-10">
@@ -89,7 +89,6 @@
   }
   $(function(){
     show_date();
-    alert("Start")
   });
 </script>
   
