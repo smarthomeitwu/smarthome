@@ -8,7 +8,16 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.min.js"></script>
+
 </head>
+<style>
+    .light-icon{
+        position: absolute; 
+        width:25px;
+        z-index:2;
+    }
+</style>
 <body>
 
 <div class="container">
@@ -26,10 +35,24 @@
                 <br/>
                 <div id="tabsJustifiedContent" class="tab-content">
                     <div id="home1" class="tab-pane fade active show">
-                         <div>
-                            <img src="map.png" width="450" />
-                         </div>
-                             
+                        <div style="position: relative;left: 0px;top: 0px;width: 450px;">
+                            <div style="position: absolute; left: 0px; top: 0px;">
+                                <img src="map.png" width="450px" />
+                            </div>
+                            <div style="position: absolute; left: 0px; top: 0px;width:450px;z-index:1;">
+                                <a id="light-restroom" href="#" ><img class="light-icon" src="red_light.png" style="left: 70px; top: 50px;" /> </a>
+                                <a id="light-livingroom1" href="#" ><img class="light-icon" src="red_light.png" style="left: 100px; top: 175px;" /> </a>
+                                <a id="light-livingroom2" href="#" ><img class="light-icon" src="red_light.png" style="left: 10px; top: 260px;" /> </a>
+                                <a id="light-livingroom3" href="#" ><img class="light-icon" src="red_light.png" style="left: 165px; top: 260px;" /> </a>
+
+                                <a id="light-bedroom1" href="#" ><img class="light-icon" src="red_light.png" style="left: 325px; top: 175px;" /> </a>
+                                <a id="light-bedroom2" href="#" ><img class="light-icon" src="red_light.png" style="left: 258px; top: 270px;" /> </a>
+                                <a id="light-bedroom3" href="#" ><img class="light-icon" src="red_light.png" style="left: 403px; top: 270px;" /> </a>
+
+                                <a id="light-kitchen" href="#" ><img class="light-icon" src="red_light.png" style="left: 250px; top: 50px;" /> </a>
+
+                            </div>
+                        </div>
                     </div>
                     <div id="profile1" class="tab-pane fade ">
                         <div class="row">
@@ -37,6 +60,8 @@
                                 <center><h3><span id="c_temp">0.00</span> *C<h3> 
                                     <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
                                 </center>
+                                <br/>
+                                Last update: <span id="last_update1" ></span> 
                             </div>
                         </div>
                     </div>
@@ -46,13 +71,15 @@
                                 <center><h3><span id="c_hum">0.00</span> %<h3>
                                     <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
                                 </center>
+                                <br/>
+                                Last update: <span id="last_update2" ></span> 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
     </div>  
-    Last update: <span id="last_update" ></span> 
+    
 
 </div>
 
@@ -73,7 +100,11 @@
       .done(function( feedback ) {
         $("#c_hum").text(feedback.feeds[0].field1);
         $("#c_temp").text(feedback.feeds[0].field2);
-        $("#last_update").text(feedback.feeds[0].created_at);
+        var tt = moment(feedback.feeds[0].created_at).format("dddd, MMMM Do, YYYY, h:mm:ss A");
+        
+        //$("#last_update").text(feedback.feeds[0].created_at);
+        $("#last_update1").text(tt);
+        $("#last_update2").text(tt);
     });
         setTimeout(getLastValue, 10000);
     
