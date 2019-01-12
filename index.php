@@ -54,7 +54,9 @@
       <div class="row">
         <H4>Home Layout</H4>
         <div class="col-sm-12">
-             <img src="map.PNG" width="500px"> </img>
+            <center>
+             <img src="map.PNG" width="100%"> </img>
+            </center>
         </div>
       </div>
       <H4>Humidity and Temperature</H4>
