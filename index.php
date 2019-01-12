@@ -17,7 +17,7 @@
      <H4>Home</H4>
         <div class="col-sm-12">
             <center>
-             <img src="map.png" width="80%"> </img>
+             <img src="map.PNG" width="80%"> </img>
             </center>
         </div>
       </div>
