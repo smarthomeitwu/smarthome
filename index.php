@@ -52,11 +52,12 @@
 
     <div class="col-sm-10">
       <div class="row">
+        <H4>Home Layout</H4>
         <div class="col-sm-12">
-             
+             <img src="map.PNG" width="500px"> </img>
         </div>
       </div>
-      <H3>Humidity and Temperature</H3>
+      <H4>Humidity and Temperature</H4>
        <div class="row">
             <div class="col-sm-6">
               <center><h3><span id="c_hum">0.00</span> %<h3>
