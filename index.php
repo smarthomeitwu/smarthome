@@ -49,10 +49,10 @@
     <div class="col-sm-10">
       <H1>Humidity and Temperature</H1>
        <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-6">
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6">
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
             </div>
             
