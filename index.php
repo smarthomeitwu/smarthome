@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <script src="http://momentjs.com/downloads/moment.min.js"></script>
+   <script src="https://momentjs.com/downloads/moment.min.js"></script>
 
 
   <style>
@@ -80,16 +80,15 @@
 </footer>
 
 <script>
-  var i = 0;
+  
   function show_date(){
     var now = moment().format("dddd, MMMM Do, YYYY, h:mm:ss A");
-    $('#c_time').text(i);
-    i=i+1;
+    $('#c_time').text(now);
     setTimeout(show_date, 1000);
 
   }
   $(function(){
-    //show_date();
+    show_date();
     alert("Start")
   });
 </script>
