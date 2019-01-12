@@ -55,7 +55,7 @@
         <H4>Home Layout</H4>
         <div class="col-sm-12">
             <center>
-             <img src="map.PNG" width="100%"> </img>
+             <img src="map.PNG" width="80%"> </img>
             </center>
         </div>
       </div>
