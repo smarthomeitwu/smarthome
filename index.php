@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="http://momentjs.com/downloads/moment.min.js"></script>
+
+
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
     .row.content {height: 1500px}
@@ -44,6 +47,7 @@
         <li class="active"><a href="#">Dashboard</a></li>
       
       </ul><br>
+                     <center><h4><span id="c_time"></span><h4> 
     </div>
 
     <div class="col-sm-10">
@@ -55,12 +59,12 @@
       <H3>Humidity and Temperature</H3>
        <div class="row">
             <div class="col-sm-6">
-              <center><h4><span id="c_hum">0.00</span><h4>
+              <center><h4><span id="c_hum">0.00</span> %<h4>
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
            </center>
                 </div>
             <div class="col-sm-6">
-               <center><h4><span id="c_hum">0.00</span><h4> 
+               <center><h4><span id="c_temp">0.00</span> *C<h4> 
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
             </center>
                  </div>
@@ -76,8 +80,14 @@
 </footer>
 
 <script>
+  function show_date(){
+    var now = moment().format("dddd, MMMM Do, YYYY, h:mm:ss A");
+    $('#c_time').append(now);
+    setTimeout(show_date, 1000);
+
+  }
   $(function(){
-    
+    show_date();
   });
 </script>
   
