@@ -59,16 +59,16 @@
       <H3>Humidity and Temperature</H3>
        <div class="row">
             <div class="col-sm-6">
-              <center><h4><span id="c_hum">0.00</span> %<h4>
+              <center><h3><span id="c_hum">0.00</span> %<h3>
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
            </center>
                 </div>
             <div class="col-sm-6">
-               <center><h4><span id="c_temp">0.00</span> *C<h4> 
+               <center><h3><span id="c_temp">0.00</span> *C<h3> 
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
             </center>
-                 </div>
-            
+           </div>
+           Last update: <span id="#last_update" ></span> 
 
       </div>
     </div>
@@ -95,6 +95,8 @@
       .done(function( feedback ) {
         $("#c_hum").text(feedback.feeds[0].field1);
         $("#c_temp").text(feedback.feeds[0].field2);
+        $("#last_update").text(feedback.feeds[0].created_at);
+
 
     });
     setTimeout(getLastValue, 5000);
