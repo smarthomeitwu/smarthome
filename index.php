@@ -17,24 +17,14 @@
 <body>
 <div class="container-fluid">
   <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <h4>Smart Home</h4>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#">Dashboard</a></li>
-      
-      </ul><br>
-                     <center><p><span id="c_time"></span><p> 
-    </div>
-
-    <div class="col-sm-10">
-      <div class="row">
-        <H4>Home Layout</H4>
+     <H4>Home Layout</H4>
         <div class="col-sm-12">
             <center>
              <img src="map.PNG" width="80%"> </img>
             </center>
         </div>
       </div>
+      <br/>
       <H4>Humidity and Temperature</H4>
        <div class="row">
             <div class="col-sm-6">
