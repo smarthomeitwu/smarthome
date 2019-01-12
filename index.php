@@ -38,7 +38,7 @@
 
 <div class="container-fluid">
   <div class="row content">
-    <div class="col-sm-3 sidenav">
+    <div class="col-sm-2 sidenav">
       <h4>Smart Home</h4>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="#section1">Dashboard</a></li>
@@ -46,14 +46,14 @@
       </ul><br>
     </div>
 
-    <div class="col-sm-9">
+    <div class="col-sm-10">
        
     </div>
   </div>
 </div>
 
 <footer class="container-fluid">
-  <p>Footer Text</p>
+  <p>School of Informatics, WU, Thailand</p>
 </footer>
 
 </body>
