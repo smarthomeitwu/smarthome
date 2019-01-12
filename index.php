@@ -68,7 +68,7 @@
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
             </center>
            </div>
-           Last update: <span id="#last_update" ></span> 
+           Last update: <span id="last_update" ></span> 
 
       </div>
     </div>
