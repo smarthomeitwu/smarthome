@@ -80,9 +80,11 @@
 </footer>
 
 <script>
+  var i = 0;
   function show_date(){
     var now = moment().format("dddd, MMMM Do, YYYY, h:mm:ss A");
-    $('#c_time').text(now);
+    $('#c_time').text(i);
+    i=i+1;
     setTimeout(show_date, 1000);
 
   }
