@@ -89,7 +89,8 @@
 
   }
   $(function(){
-    show_date();
+    //show_date();
+    alert("Start")
   });
 </script>
   
