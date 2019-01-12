@@ -93,8 +93,10 @@
       format: "json"
     })
       .done(function( feedback ) {
-        console.log(JSON.stringify(feedback.feeds.field1)); 
-      });
+        $("#c_hum").text(feedback.feeds[0].field1);
+        $("#c_temp").text(feedback.feeds[0].field2);
+
+    });
     setTimeout(getLastValue, 5000);
   }
   $(function(){
