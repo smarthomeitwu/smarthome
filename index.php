@@ -82,7 +82,7 @@
 <script>
   function show_date(){
     var now = moment().format("dddd, MMMM Do, YYYY, h:mm:ss A");
-    $('#c_time').append(now);
+    $('#c_time').text(now);
     setTimeout(show_date, 1000);
 
   }
