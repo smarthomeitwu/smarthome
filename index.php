@@ -25,11 +25,13 @@
                 </ul>
                 <br/>
                 <div id="tabsJustifiedContent" class="tab-content">
-                    <div id="home1" class="tab-pane fade active">
-                        Home
-                             <img src="map.png" width="50%" />
+                    <div id="home1" class="tab-pane fade active show">
+                         <div>
+                            <img src="map.png" width="450" />
+                         </div>
+                             
                     </div>
-                    <div id="profile1" class="tab-pane fade show">
+                    <div id="profile1" class="tab-pane fade ">
                         <div class="row">
                             <div class="col-sm-6">
                                 <center><h3><span id="c_temp">0.00</span> *C<h3> 
@@ -55,4 +57,33 @@
 </div>
 
 </body>
+<script>  
+  function show_date(){
+    var now = moment().format("dddd, MMMM Do, YYYY, h:mm:ss A");
+    $('#c_time').text(now);
+    setTimeout(show_date, 1000);
+
+  }
+
+  function getLastValue(){
+    var url = "https://api.thingspeak.com/channels/666956/feeds.json?results=1";
+    $.getJSON( url, {
+      format: "json"
+    })
+      .done(function( feedback ) {
+        $("#c_hum").text(feedback.feeds[0].field1);
+        $("#c_temp").text(feedback.feeds[0].field2);
+        $("#last_update").text(feedback.feeds[0].created_at);
+    });
+        setTimeout(getLastValue, 10000);
+    
+  }
+
+  $(function(){
+    //show_date();
+    getLastValue();
+  });
+</script>
+
+
 </html>
