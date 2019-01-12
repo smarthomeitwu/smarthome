@@ -99,6 +99,7 @@
   }
   $(function(){
     show_date();
+    getLastValue();
   });
 </script>
   
