@@ -13,7 +13,7 @@
 
 <div class="container">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Smart Home</a> x
+        <a class="navbar-brand" href="#">Smart Home</a> 
     </nav>
 
     <div class="row">
@@ -23,7 +23,7 @@
                     <li class="nav-item"><a href="" data-target="#profile1" data-toggle="tab" class="nav-link small text-uppercase ">Temperture</a></li>
                     <li class="nav-item"><a href="" data-target="#messages1" data-toggle="tab" class="nav-link small text-uppercase">Humidity</a></li>
                 </ul>
-                <br>
+                <br/>
                 <div id="tabsJustifiedContent" class="tab-content">
                     <div id="home1" class="tab-pane fade active">
                              <img src="map.png" width="50%" />
@@ -46,12 +46,6 @@
                                 </center>
                             </div>
                         </div>
-
-
-
-
-
-
                     </div>
                 </div>
             </div>
