@@ -96,10 +96,9 @@
         $("#c_hum").text(feedback.feeds[0].field1);
         $("#c_temp").text(feedback.feeds[0].field2);
         $("#last_update").text(feedback.feeds[0].created_at);
-
-
     });
-    setTimeout(getLastValue, 5000);
+        setTimeout(getLastValue, 10000);
+    
   }
   $(function(){
     show_date();
