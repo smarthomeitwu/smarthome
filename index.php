@@ -41,19 +41,25 @@
     <div class="col-sm-2 sidenav">
       <h4>Smart Home</h4>
       <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Dashboard</a></li>
+        <li class="active"><a href="#">Dashboard</a></li>
       
       </ul><br>
     </div>
 
     <div class="col-sm-10">
-  
+      <div class="row">
+        <div class="col-sm-12">
+             
+        </div>
+      </div>
       <H3>Humidity and Temperature</H3>
        <div class="row">
             <div class="col-sm-6">
+              <center><h4><span id="c_hum">0.00</span><h4></center>
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
             </div>
             <div class="col-sm-6">
+               <center><h4><span id="c_hum">0.00</span><h4></center>
               <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
             </div>
             
@@ -67,5 +73,11 @@
   <p>School of Informatics, WU, Thailand</p>
 </footer>
 
+<script>
+  $(function(){
+    
+  });
+</script>
+  
 </body>
 </html>
