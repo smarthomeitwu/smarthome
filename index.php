@@ -26,8 +26,8 @@
                 <br/>
                 <div id="tabsJustifiedContent" class="tab-content">
                     <div id="home1" class="tab-pane fade active">
+                        Home
                              <img src="map.png" width="50%" />
-
                     </div>
                     <div id="profile1" class="tab-pane fade show">
                         <div class="row">
