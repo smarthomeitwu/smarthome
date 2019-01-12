@@ -87,6 +87,16 @@
     setTimeout(show_date, 1000);
 
   }
+  function getLastValue(){
+    var url = "https://api.thingspeak.com/channels/666956/feeds.json?results=1";
+    $.getJSON( url, {
+      format: "json"
+    })
+      .done(function( feedback ) {
+        console.log(JSON.stringify(feedback)); 
+      });
+    setTimeout(getLastValue, 5000);
+  }
   $(function(){
     show_date();
   });
