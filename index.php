@@ -93,7 +93,7 @@
       format: "json"
     })
       .done(function( feedback ) {
-        console.log(JSON.stringify(feedback)); 
+        console.log(JSON.stringify(feedback.feeds.field1)); 
       });
     setTimeout(getLastValue, 5000);
   }
