@@ -111,8 +111,9 @@
   }
 
 
-  function light_click(id){
-     console.log(JOSN.stringify(id));
+  function light_click(){
+      var id = this.id;
+     console.log(id);
   }
   $(function(){
     //show_date();
