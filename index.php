@@ -57,8 +57,8 @@
                                 </div>                            
                             </div>
                             <div class="col-sm-6">
-                                <p>Gas Alarm Status : <span id="gas_status"> </span>
-                                <p>Garden Light Status : <span id="garden_status"> </span>
+                                <h5>Gas Alarm Status : <span id="gas_status"> </span></h5>
+                                <h5><p>Garden Light Status : <span id="garden_status"> </span></h5>
                             </div>
                         </div>
 
