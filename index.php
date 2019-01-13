@@ -81,7 +81,8 @@
                         <div class="row">
                             <div class="col-sm-6">
                                 IP Address : <input type="text" id="ip_address" /> <button class="btn btn-success"> Connect </button>
-                                
+                                <br/>
+                                Status: <span  class="badge badge-danger" id="server_status"> disconnected </span>
                             </div>
                         </div>
                     </div>
