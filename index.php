@@ -40,16 +40,16 @@
                                 <img src="map.png" width="450px" />
                             </div>
                             <div style="position: absolute; left: 0px; top: 0px;width:450px;z-index:1;">
-                                <a id="light-restroom" href="#" ><img class="light-icon" src="red_light.png" style="left: 70px; top: 50px;" /> </a>
-                                <a id="light-livingroom1" href="#" ><img class="light-icon" src="red_light.png" style="left: 100px; top: 175px;" /> </a>
-                                <a id="light-livingroom2" href="#" ><img class="light-icon" src="red_light.png" style="left: 10px; top: 260px;" /> </a>
-                                <a id="light-livingroom3" href="#" ><img class="light-icon" src="red_light.png" style="left: 165px; top: 260px;" /> </a>
+                                <a id="light-restroom" class="light" href="return false;" ><img class="light-icon" src="red_light.png" style="left: 70px; top: 50px;" /> </a>
+                                <a id="light-livingroom1" class="light" href="return false;" ><img class="light-icon" src="red_light.png" style="left: 100px; top: 175px;" /> </a>
+                                <a id="light-livingroom2" class="light" href="return false;"><img class="light-icon" src="red_light.png" style="left: 10px; top: 260px;" /> </a>
+                                <a id="light-livingroom3" class="light" href="return false;" ><img class="light-icon" src="red_light.png" style="left: 165px; top: 260px;" /> </a>
 
-                                <a id="light-bedroom1" href="#" ><img class="light-icon" src="red_light.png" style="left: 325px; top: 175px;" /> </a>
-                                <a id="light-bedroom2" href="#" ><img class="light-icon" src="red_light.png" style="left: 258px; top: 270px;" /> </a>
-                                <a id="light-bedroom3" href="#" ><img class="light-icon" src="red_light.png" style="left: 403px; top: 270px;" /> </a>
+                                <a id="light-bedroom1" class="light" href="return false;" ><img class="light-icon" src="red_light.png" style="left: 325px; top: 175px;" /> </a>
+                                <a id="light-bedroom2"  class="light" href="return false;" ><img class="light-icon" src="red_light.png" style="left: 258px; top: 270px;" /> </a>
+                                <a id="light-bedroom3" class="light" href="return false;" ><img class="light-icon" src="red_light.png" style="left: 403px; top: 270px;" /> </a>
 
-                                <a id="light-kitchen" href="#" ><img class="light-icon" src="red_light.png" style="left: 250px; top: 50px;" /> </a>
+                                <a id="light-kitchen" class="light" href="return false;" ><img class="light-icon" src="red_light.png" style="left: 250px; top: 50px;" /> </a>
 
                             </div>
                         </div>
@@ -110,9 +110,14 @@
     
   }
 
+
+  function light_click(){
+      alert(id);
+  }
   $(function(){
     //show_date();
     getLastValue();
+    $("a.light").click(light_click);
   });
 </script>
 
