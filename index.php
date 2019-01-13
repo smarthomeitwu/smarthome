@@ -57,7 +57,7 @@
                     <div id="profile1" class="tab-pane fade ">
                         <div class="row">
                             <div class="col-sm-6">
-                                <center><h3><span id="c_temp">0.00</span> *C<h3> 
+                                <center><h3>Temperture: <span id="c_temp">0.00</span> *C<h3> 
                                     <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
                                 </center>
                                 <br/>
@@ -68,7 +68,7 @@
                     <div id="messages1" class="tab-pane fade">
                         <div class="row">
                             <div class="col-sm-6">
-                                <center><h3><span id="c_hum">0.00</span> %<h3>
+                                <center><h3>Humidity: <span id="c_hum">0.00</span> %<h3>
                                     <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/666956/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
                                 </center>
                                 <br/>
