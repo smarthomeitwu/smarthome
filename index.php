@@ -35,24 +35,33 @@
                 <br/>
                 <div id="tabsJustifiedContent" class="tab-content">
                     <div id="home1" class="tab-pane fade active show">
-                        <div style="position: relative;left: 0px;top: 0px;width: 450px;">
-                            <div style="position: absolute; left: 0px; top: 0px;">
-                                <img src="map.png" width="450px" />
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div style="position: relative;left: 0px;top: 0px;width: 450px;">
+                                    <div style="position: absolute; left: 0px; top: 0px;">
+                                        <img src="map.png" width="450px" />
+                                    </div>
+                                    <div style="position: absolute; left: 0px; top: 0px;width:450px;z-index:1;">
+                                        <a id="light-restroom" class="light" href="#" onclick="return false;"><img class="light-icon" src="red_light.png" style="left: 70px; top: 50px;" /> </a>
+                                        <a id="light-livingroom1" class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 100px; top: 175px;" /> </a>
+                                        <a id="light-livingroom2" class="light" href="javascript::return false;"><img class="light-icon" src="red_light.png" style="left: 10px; top: 260px;" /> </a>
+                                        <a id="light-livingroom3" class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 165px; top: 260px;" /> </a>
+
+                                        <a id="light-bedroom1" class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 325px; top: 175px;" /> </a>
+                                        <a id="light-bedroom2"  class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 258px; top: 270px;" /> </a>
+                                        <a id="light-bedroom3" class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 403px; top: 270px;" /> </a>
+
+                                        <a id="light-kitchen" class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 250px; top: 50px;" /> </a>
+
+                                    </div>
+                                </div>                            
                             </div>
-                            <div style="position: absolute; left: 0px; top: 0px;width:450px;z-index:1;">
-                                <a id="light-restroom" class="light" href="#" onclick="return false;"><img class="light-icon" src="red_light.png" style="left: 70px; top: 50px;" /> </a>
-                                <a id="light-livingroom1" class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 100px; top: 175px;" /> </a>
-                                <a id="light-livingroom2" class="light" href="javascript::return false;"><img class="light-icon" src="red_light.png" style="left: 10px; top: 260px;" /> </a>
-                                <a id="light-livingroom3" class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 165px; top: 260px;" /> </a>
-
-                                <a id="light-bedroom1" class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 325px; top: 175px;" /> </a>
-                                <a id="light-bedroom2"  class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 258px; top: 270px;" /> </a>
-                                <a id="light-bedroom3" class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 403px; top: 270px;" /> </a>
-
-                                <a id="light-kitchen" class="light" href="javascript::return false;" ><img class="light-icon" src="red_light.png" style="left: 250px; top: 50px;" /> </a>
-
+                            <div class="col-sm-6">
+                                <p>Gas Alarm Status : <span id="gas_status"> </span>
+                                <p>Garden Light Status : <span id="garden_status"> </span>
                             </div>
                         </div>
+
                     </div>
                     <div id="profile1" class="tab-pane fade ">
                         <div class="row">
@@ -113,8 +122,8 @@
 
   function light_click(){
       var id = this.id;
-     console.log(id);
-  }
+        
+    }
   $(function(){
     //show_date();
     getLastValue();
