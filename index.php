@@ -112,7 +112,7 @@
 
 
   function light_click(id){
-     console.log(id.id);
+     console.log(JOSN.stringify(id));
   }
   $(function(){
     //show_date();
