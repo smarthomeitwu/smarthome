@@ -111,7 +111,7 @@
   }
 
 
-  function light_click(){
+  function light_click(id){
      console.log(id.id);
   }
   $(function(){
