@@ -36,7 +36,7 @@
                 <div id="tabsJustifiedContent" class="tab-content">
                     <div id="home1" class="tab-pane fade active show">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-6">
                                 <div style="position: relative;left: 0px;top: 0px;width: 450px;">
                                     <div style="position: absolute; left: 0px; top: 0px;">
                                         <img src="map.png" width="450px" />
@@ -56,7 +56,7 @@
                                     </div>
                                 </div>                            
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-6">
                                 <h5>Gas Alarm Status : <span id="gas_status"> </span></h5>
                                 <h5><p>Garden Light Status : <span id="garden_status"> </span></h5>
                             </div>
