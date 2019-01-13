@@ -31,6 +31,7 @@
                     <li class="nav-item"><a href="" data-target="#home1" data-toggle="tab" class="nav-link small text-uppercase active">Light</a></li>
                     <li class="nav-item"><a href="" data-target="#profile1" data-toggle="tab" class="nav-link small text-uppercase ">Temperture</a></li>
                     <li class="nav-item"><a href="" data-target="#messages1" data-toggle="tab" class="nav-link small text-uppercase">Humidity</a></li>
+                    <li class="nav-item"><a href="" data-target="#config" data-toggle="tab" class="nav-link small text-uppercase">Configuration</a></li>
                 </ul>
                 <br/>
                 <div id="tabsJustifiedContent" class="tab-content">
@@ -73,6 +74,14 @@
                                 </center>
                                 <br/>
                                 Last update: <span id="last_update2" ></span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div id="config" class="tab-pane fade">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                IP Address : <input type="text" id="ip_address" /> <button class="btn btn-success"> Connect </button>
+                                
                             </div>
                         </div>
                     </div>
