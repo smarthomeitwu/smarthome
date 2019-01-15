@@ -150,7 +150,21 @@
 
   function light_click(){
       var id = this.id;
-      alert(id);
+      console.log(id);
+      var url = "http://192.168.43.35";
+      if(id == "light-livingroom2"){
+          url += "/LV2ON";
+          $.get(url, function(data) {
+            alert(data);
+          });
+      }
+      if(id == "light-livingroom3"){
+          
+          url += "/LV2OFF";
+          $.get(url, function(data) {
+            alert(data);
+          });
+      }
         
     }
   $(function(){
