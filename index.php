@@ -37,7 +37,7 @@
                     <div id="home1" class="tab-pane fade active show">
 
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <div style="position: relative;left: 0px;top: 0px;width: 450px;">
                                 <div style="position: absolute; left: 0px; top: 0px;">
                                     <img src="map.png" width="450px" />                                
@@ -65,8 +65,8 @@
                                 </div>
                             </div>  
                         </div>
-                        <div class="col-3">
-
+                        <div class="col-md-3">
+                            <img id="gas_mon" src="black_fire.jpg" width="100px"alt=""/><br/> Gas Monitoring
 
 
                         </div>
@@ -133,7 +133,13 @@
         $("#c_hum").text(feedback.feeds[0].field1);
         $("#c_temp").text(feedback.feeds[0].field2);
         var tt = moment(feedback.feeds[0].created_at).format("dddd, MMMM Do, YYYY, h:mm:ss A");
-        
+        if(feedback.feeds[0].field4 == 1){
+            $("#gas_mon").attr('src', 'red_fire.png');
+            $("#gas_mon").attr('width', '100px');
+        }else{
+            $("#gas_mon").attr('src', ' black_fire.jpg');
+            $("#gas_mon").attr('width', '100px');
+        }
         //$("#last_update").text(feedback.feeds[0].created_at);
         $("#last_update1").text(tt);
         $("#last_update2").text(tt);
